@@ -22,14 +22,14 @@ export const ChatHeader = ({
         <div className="text-md font-semibold px-3 flex items-center h-12 border-neutral-200 dark:border-neutral-800 border-b-2">
             <MobileToggle serverId={serverId}/>
             {type === "channel" && (
-                <Hash className="w-5 h-5 text-zinc-500 dark: text-blue-500/90 mr-2" />
+                <Hash className="w-5 h-5 text-zinc-500 dark: text-blue-500/90" />
             )}
             {type === "conversation" && (
                 <UserAvatar
                 src={imageUrl}
                 className="h-4 w-4 md:h-4 md:w-4 mr-4"/>
             )}
-            <p className="font-semibold text-md text-black dark:text-white">
+            <p className="font-semibold text-md text-black dark:text-white ml-2">
                 {name}
             </p>
             <div className="ml-auto flex items-center">
