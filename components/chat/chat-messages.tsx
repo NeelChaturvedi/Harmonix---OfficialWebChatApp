@@ -116,8 +116,8 @@ export const ChatMessages = ({
                         ))}
                     </Fragment>
                 ))}
-                <div ref={bottomRef} />
             </div>
+            <div ref={bottomRef} />
         </div>
     )
 }
